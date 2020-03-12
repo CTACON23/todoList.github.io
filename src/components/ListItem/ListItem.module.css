@@ -1,0 +1,65 @@
+.item{
+    display: block;
+    border: 1px solid #61dafb;
+    padding: 1%;
+    width: 50%;
+    margin: 1% auto;
+    position: relative;
+}
+.item h3{
+    text-align: justify;
+}
+.item button{
+    margin: 0 1%;
+    background: none;
+    border:none;
+}
+.item.important{
+    background: forestgreen;
+}
+.item > .important{
+    background: greenyellow;
+}
+.item > .done{
+    background: crimson;
+}
+.item > button{
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.layout{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.layout h3{
+    font-size: 7em;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.8);
+}
+.layoutHide{
+    display: none;
+}
+.buttonForDone{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    z-index: 100;
+}
+.buttonForRemove{
+    background: black !important;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: 100;
+
+}
+.buttonForRemoveHide{
+    display: none;
+}
